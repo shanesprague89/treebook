@@ -1,39 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <%= image_tag "TreeBookLogo.png", alt: "Treebook", class: "treebooklogo" %>
+  
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-  
-  <ul class="nav nav-pills">
-    
-    <li class="active">
-      <%= link_to "Statuses", statuses_path %>
-    </li>
-    <li>
-      <a href="#">Users</a>
-    </li>
-    <li class="dropdown">
-      <a class="dropdown-toggle"
-         data-toggle="dropdown"
-         href="#">
-          Dropdown
-          <b class="caret"></b>
-        </a>
-      <ul class="dropdown-menu">
-        <li><a href="about">About Us</a></li>
-        <li class="divider"></li>
-        <li><a href="profile">Profile</a></li>
-      </ul>
-    </li>
-  </ul>
   <div class="container">
-      <%= yield %>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+    <%= image_tag "TreeBookLogo.png", alt: "Treebook", class: "treebooklogo" %>
+    <ul class="nav nav-pills">
+      
+      <li class="active">
+        <%= link_to "Statuses", statuses_path %>
+      </li>
+      <li>
+        <a href="#">Users</a>
+      </li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            Menu
+            <b class="caret"></b>
+          </a>
+        <ul class="dropdown-menu">
+          <li><a href="about">About Us</a></li>
+          <li class="divider"></li>
+          <li><a href="profile">Profile</a></li>
+        </ul>
+      </li>
+    </ul>
   </div>
+  <div class="container">
+    <%= yield %>
+      
+    <div class="footer">
+      <%= render "layouts/footer" %>
+    </div>
+  </div>
+  
 
-
+  
 </body>
 </html>

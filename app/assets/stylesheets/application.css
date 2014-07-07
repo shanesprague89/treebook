@@ -16,22 +16,23 @@
 html{
     background-color: #ccc;
 }
-body{
+body {
     background-color: #ccc;
 }
-.nav{
-    padding-left: 100px;
+.year{
+    color: #8392b5;
 }
-.logo{
-    padding-left: 100px;
-    color: #0f4b63;
-}
+
 .btn {
     float: right;
 }
-#newstatusbtn {
+/*#newstatusbtn {
     margin-bottom: 50px;
+}*/
+.treebooklogo{
+    padding: 20px 0;
 }
-.treebooklogo {
-    padding: 30px 100px;
+.footer {
+    padding: 8px 0;
+    float: right;
 }
