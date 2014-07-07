@@ -13,3 +13,25 @@
  *= require_tree .
  *= require_self
  */
+html{
+    background-color: #ccc;
+}
+body{
+    background-color: #ccc;
+}
+.nav{
+    padding-left: 100px;
+}
+.logo{
+    padding-left: 100px;
+    color: #0f4b63;
+}
+.btn {
+    float: right;
+}
+#newstatusbtn {
+    margin-bottom: 50px;
+}
+.treebooklogo {
+    padding: 30px 100px;
+}
