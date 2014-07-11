@@ -24,7 +24,7 @@ body {
 }
 
 .btn {
-    float: right;
+    margin: 10px 0;
 }
 /*#newstatusbtn {
     margin-bottom: 50px;
