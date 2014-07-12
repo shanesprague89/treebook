@@ -36,3 +36,9 @@ body {
     padding: 8px 0;
     float: right;
 }
+.form-input {
+    padding: 5px 0 15px 0;
+}
+.well {
+    min-width: 200px;
+}
