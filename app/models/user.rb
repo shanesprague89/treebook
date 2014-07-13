@@ -10,17 +10,16 @@ class User < ActiveRecord::Base
         first_name + " " + last_name
     end
     
+    validates :first_name, presence: true
+    validates :last_name, presence: true
+    validates :profile_name, presence: true, uniqueness: true, format: {
+                                            with: /a-zA-Z0-9_-/,
+                                            message: 'Must be formatted correctly.'
+                                            }
+    
     has_many :statuses
     
     def sign_up
         default_params.permit(:first_name, :last_name, :profile_name)
     end
-    
-    
-    #This doesn't work anymore! Now, with Devise, you need strong parameters!     
-    #attr_accessible :email, :password, :password_confirmation, :remember_me,
-    #:first_name, :last_name, :profile_name
-                    
-    
-   
 end
